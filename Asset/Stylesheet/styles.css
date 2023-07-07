@@ -1,4 +1,4 @@
-body {
+  body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -7,25 +7,23 @@ body {
   
   /* container styles */
   .container {
-    max-width: 500px;
     margin: 50px auto;
     background-color: #f5f5f5;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
   h1 {
     text-align: center;
     color: #333;
   }
+
   /* form styles */
   #todo-form{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
-  
   input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -34,7 +32,6 @@ body {
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
   button {
     padding: 10px 20px;
     background-color: #4caf50;
@@ -46,16 +43,15 @@ body {
     margin-left: 10px;
     transition: background-color 0.3s ease;
   }
-
   button:hover {
     background-color: #45a049;
- } 
+  } 
+
   /* todo-list styles */
   ul {
     list-style-type: none;
     padding: 0;
   }
-  
   ul li {
     display: flex;
     align-items: center;
@@ -67,31 +63,21 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
   }
-
   ul li::before {
     content: '';
     position: absolute;
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    /* background-image: url(png/unchecked.png);
-    background-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px; */
   }
-  
   li:hover {
     background-color: #ebebeb;
   }
-  
   ul li.completed {
     background-color: #f5f5f5;
     text-decoration: line-through;
     color: #555;
-    
   }
-
   ul li span {
     position: absolute;
     right: 0;
@@ -105,23 +91,31 @@ body {
     border-radius: 50%;
     cursor: pointer;
   }
-
   ul li span:hover {
     background: lightgray;
   }
 
-  /* ul li.completed::before {
-    background-image: url(png/checked.png);
-  } */
-
-  /* .delete-btn {
-    margin-left: auto;
-    padding: 5px;
-    background-color: #ff3333;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-  } */
+  /* Media Queries */
+   @media (max-width: 425px) {
+    .container {
+      max-width: 350px;
+    }
+  }
+   @media (min-width: 768px) {
+    .container {
+      max-width: 500px;
+    }
+  } 
+  @media (max-width: 375px) {
+    .container {
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 320px) {
+    .container {
+      max-width: 250px;
+    }
+  }
 
  
 

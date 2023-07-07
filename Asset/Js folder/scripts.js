@@ -32,5 +32,4 @@ listContainer.addEventListener('click' , (e) => {
 const saveData = () => localStorage.setItem('data' , listContainer.innerHTML)
 
 const showData = () => listContainer.innerHTML = localStorage.getItem('data')
-
 showData()
